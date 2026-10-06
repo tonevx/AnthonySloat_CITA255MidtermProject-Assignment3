@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnthonySloat_CITA255MidtermProject.NewPage4"
+             Title="Mysterious Liquid">
+    <ScrollView>
+        <Grid RowDefinitions="Auto,*,Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+        Padding="24"
+        RowSpacing="14">
+            <Label HorizontalOptions="Start" Text="A mysterious liquid" Style="{StaticResource TitleLabel}" Grid.Row="2"/>
+            <Image Source="mysteriousliquid.png" HeightRequest="300" WidthRequest="300" Grid.Row="0"/>
+            <Label Text="$1.25" Style="{StaticResource PriceLabel}" Grid.Row="3"/>
+            <Label Text="Honestly... we don't recommend this. But people buy it." Style="{StaticResource DescriptionLabel}" Grid.Row="4"/>
+            <Label Text="Legitimately, we cannot tell you what's in this - only that it's apparently really good for your colon." Style="{StaticResource DescriptionLabel}" Grid.Row="5"/>
+            <Entry Placeholder="Quantity" WidthRequest="700" Grid.Row="6" HorizontalOptions="Start"/>
+            <Button Text="Out of stock" WidthRequest="700" Grid.Row="7" BackgroundColor="DimGray" TextColor="Red" IsEnabled="False"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>
