@@ -1,9 +1,9 @@
-# Assignment 3 — [The Midterm Part 1: (Wireframing for) The Store]
+# Assignment 3 — [The Midterm Store]
 
 **Name:** Anthony Sloat
 
 ## What it does
-The tool presents to the user a fictional store with a variety of items that it obtained via... various circumstances. Each button allows for the user to access specific pages where they can add a certain amount of the item to the cart (of course, the cart doesn't work just yet - that's part 2). Except for the Mysterious Liquid. That's out of stock...
+The tool presents to the user a fictional store with a variety of items that it obtained via... various circumstances. Each button allows for the user to access specific pages where they can add a certain amount of the item to the cart. Except for the Mysterious Liquid. That's out of stock...
 
 ## How to run it
 Open the .sln in Visual Studio, set the target to Windows Machine, press F5.
