@@ -20,8 +20,21 @@ public partial class ItemPage : ContentPage
             nameLabel.Text = Items.Products[detailindex];
             priceLabel.Text = $"${Items.Prices[detailindex]:F2}";
             descriptionLabel.Text = Items.Descriptions[detailindex];
-            string[] productImages = {"zeztz.jpg", "chickensandwich.jpg", "kingdomkey.jpg", "mysteriousliquid.png"};
+            string[] productImages = { "zeztz.jpg", "chickensandwich.jpg", "kingdomkey.jpg", "mysteriousliquid.png" };
             productImage.Source = productImages[detailindex];
+
+            if (detailindex == 3)
+            {
+                quantityEntry.IsVisible = false;
+                addToCartButton.IsVisible = false;
+                outOfStockLabel.IsVisible = true;
+            }
+            else
+            {
+                quantityEntry.IsVisible = true;
+                addToCartButton.IsVisible = true;
+                outOfStockLabel.IsVisible = false;
+            }
         }
     }
 

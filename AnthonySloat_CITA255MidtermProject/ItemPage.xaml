@@ -13,8 +13,9 @@
             <Label x:Name="priceLabel" Text="(price)" Style="{StaticResource PriceLabel}" Grid.Row="3"/>
             <Label x:Name="descriptionLabel" Text="(description)" Style="{StaticResource DescriptionLabel}" Grid.Row="4"/>
             <Entry Placeholder="Quantity" WidthRequest="700" Grid.Row="6" HorizontalOptions="Start" x:Name="quantityEntry"/>
-            <Button Text="Add to cart" WidthRequest="700" Grid.Row="7" Clicked="Button_Clicked"/>
+            <Button x:Name="addToCartButton" Text="Add to cart" WidthRequest="700" Grid.Row="7" Clicked="Button_Clicked"/>
             <Label x:Name="addedLabel" Text="" FontSize="12" TextColor="LightGreen" Grid.Row="8" HorizontalTextAlignment="Center"/>
+            <Label x:Name="outOfStockLabel" Text="OUT OF STOCK" FontSize="25" FontAttributes="Bold" TextColor="Red" Grid.Row="8" HorizontalTextAlignment="Center" IsVisible="False"/>
         </Grid>
     </ScrollView>
 </ContentPage>
