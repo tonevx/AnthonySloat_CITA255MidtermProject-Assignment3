@@ -5,10 +5,7 @@
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute("ZEZTZpage", typeof(NewPage1));
-            Routing.RegisterRoute("chickenpage", typeof(NewPage2));
-            Routing.RegisterRoute("keybladepage", typeof(NewPage3));
-            Routing.RegisterRoute("liquidpage", typeof(NewPage4));
+            Routing.RegisterRoute("Item", typeof(ItemPage));
         }
     }
 }

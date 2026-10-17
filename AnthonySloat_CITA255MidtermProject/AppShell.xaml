@@ -16,12 +16,8 @@
 
         <ShellContent
              Title="Checkout"
-             ContentTemplate="{DataTemplate local:DestinatioPageSample}"
+             ContentTemplate="{DataTemplate local:CheckoutPage}"
              Route="destinationPageSample" />
-
-
-
-
     </TabBar>
 
 </Shell>

@@ -2,45 +2,30 @@
 {
     public partial class MainPage : ContentPage
     {
-        List<string> products =
-        [
-            "ZEZTZ Driver",
-            "Chicken Sandwich",
-            "The Literal Keyblade",
-            "Mysterious Liquid"
-        ];
+
+        List<string> rows = new List<string>();
+
 
         public MainPage()
         {
             InitializeComponent();
-            productList.ItemsSource = products;
+            for (int i = 0; i < Items.Products.Length; i++)
+            {
+                rows.Add($"{Items.Products[i]}   —   {Items.Prices[i]:C}");
+            }
+            productList.ItemsSource = rows;
         }
 
-        private async void OnProductSelected(object sender, SelectionChangedEventArgs e) //Second argument is how we get the information
+        private async void OnProductSelected(object sender, SelectionChangedEventArgs e)
         {
-            if (e.CurrentSelection.Count > 0) // How we check if the input is null
-            {
-                string picked = e.CurrentSelection[0].ToString();
+            if (e.CurrentSelection.Count == 0)
+                return;
+         string picked = e.CurrentSelection[0].ToString();
 
-                productList.SelectedItem = null;
+         productList.SelectedItem = null;
+         int index = rows.IndexOf(picked);
+         await Shell.Current.GoToAsync($"Item?index={index}");
 
-                if (picked == "ZEZTZ Driver")
-                {
-                    await Shell.Current.GoToAsync("ZEZTZpage");
-                }
-                else if (picked == "Chicken Sandwich")
-                {
-                    await Shell.Current.GoToAsync("chickenpage");
-                }
-                else if (picked == "The Literal Keyblade")
-                {
-                    await Shell.Current.GoToAsync("keybladepage");
-                }
-                else if (picked == "Mysterious Liquid")
-                {
-                    await Shell.Current.GoToAsync("liquidpage");
-                }
-            }
         }
     }
 }
