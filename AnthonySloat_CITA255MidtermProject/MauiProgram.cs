@@ -13,6 +13,8 @@ namespace AnthonySloat_CITA255MidtermProject
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("KHDATA.OTF", "KH Data");
+                    fonts.AddFont("8514FIX.FON", "8514 Fix");
                 });
 
 #if DEBUG
