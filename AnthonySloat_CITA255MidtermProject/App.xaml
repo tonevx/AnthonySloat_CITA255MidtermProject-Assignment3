@@ -12,6 +12,7 @@
             <Style TargetType="Label" x:Key="TitleLabel">
                 <Setter Property="FontSize" Value="20"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontFamily" Value="8514 Fix"/>
             </Style>
             <Style TargetType="Label" x:Key="DescriptionLabel">
                 <Setter Property="FontSize" Value="15"/>
@@ -20,6 +21,7 @@
             <Style TargetType="Label" x:Key="PriceLabel">
                 <Setter Property="FontSize" Value="17"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontFamily" Value="KH Data"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
